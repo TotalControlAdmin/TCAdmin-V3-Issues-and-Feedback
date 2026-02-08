@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: TCAdmin Documentation
+    url: https://docs.tcadmin.com
+    about: Check the documentation before opening an issue.
+  - name: TCAdmin Website
+    url: https://www.tcadmin.com
+    about: Visit the official TCAdmin website.
