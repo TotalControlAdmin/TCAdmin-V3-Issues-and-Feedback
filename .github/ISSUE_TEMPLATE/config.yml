@@ -1,4 +1,4 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
   - name: Feature requests (Discussions)
     url: https://github.com/TotalControlAdmin/TCAdmin-V3-Issues-and-Feedback/discussions
