@@ -6,7 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report a bug. Please fill out the information below to help us investigate.
+        Thanks for taking the time to report a bug. Please fill out the information below to help us investigate quickly.
+
+        - Check the docs first: https://docs.tcadmin.com
+        - If this is a feature request, post it in Discussions: https://github.com/TotalControlAdmin/TCAdmin-V3-Issues-and-Feedback/discussions
+        Providing a minimal reproduction, logs and the exact TCAdmin version greatly speeds up triage.
 
   - type: textarea
     id: description
@@ -21,7 +25,7 @@ body:
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: Steps to reproduce the behavior.
+      description: Minimal, exact steps to reproduce the behavior.
       placeholder: |
         1. Go to '...'
         2. Click on '...'
@@ -42,7 +46,7 @@ body:
     id: actual
     attributes:
       label: Actual Behavior
-      description: What actually happened.
+      description: What actually happened (include error messages / stack traces).
     validations:
       required: true
 
@@ -56,6 +60,24 @@ body:
       required: true
 
   - type: dropdown
+    id: area
+    attributes:
+      label: Component / Area
+      description: Which part of TCAdmin is affected?
+      options:
+        - Web Interface
+        - API
+        - Installer
+        - Agent
+        - Database
+        - Authentication
+        - CLI
+        - Docker
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
     id: os
     attributes:
       label: Operating System
@@ -63,25 +85,67 @@ body:
         - Windows Server 2022
         - Windows Server 2019
         - Windows Server 2016
-        - Ubuntu 22.04
         - Ubuntu 24.04
+        - Ubuntu 22.04
         - Debian 12
         - Other (specify in description)
     validations:
       required: true
 
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Production
+        - Staging
+        - Development / Local
+        - Test / CI
+        - Other
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this occur?
+      options:
+        - Always
+        - Sometimes
+        - Intermittent
+        - Once
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: regression
+    attributes:
+      label: Regression (optional)
+      description: Did this used to work in a previous version? If yes, which version?
+      placeholder: e.g. Worked in 3.0.1
+
   - type: textarea
     id: logs
     attributes:
       label: Relevant Logs
-      description: Paste any relevant log output here. This will be automatically formatted as code.
+      description: Paste any relevant log output here (surrounding lines help). Use code blocks or attach log files.
       render: shell
 
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain the problem.
+      label: Screenshots / Attachments
+      description: Attach screenshots, recordings or configuration snippets. Images/files can be uploaded after creating the issue.
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact / Severity (optional)
+      options:
+        - Blocker
+        - High
+        - Medium
+        - Low
+        - Trivial
 
   - type: checkboxes
     id: terms

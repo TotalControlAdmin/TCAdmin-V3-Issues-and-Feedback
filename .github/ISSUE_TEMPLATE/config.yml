@@ -1,8 +1,12 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Feature requests (Discussions)
+    url: https://github.com/TotalControlAdmin/TCAdmin-V3-Issues-and-Feedback/discussions
+    about: Post feature ideas and discuss them in Discussions — feature requests in Issues may be closed.
   - name: TCAdmin Documentation
     url: https://docs.tcadmin.com
     about: Check the documentation before opening an issue.
   - name: TCAdmin Website
     url: https://www.tcadmin.com
     about: Visit the official TCAdmin website.
+
