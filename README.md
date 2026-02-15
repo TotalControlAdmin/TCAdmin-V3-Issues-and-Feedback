@@ -10,7 +10,7 @@ This repository is the public issue tracker for `TCAdmin V3`. Use it to report b
 
 - Browse issues: https://github.com/TotalControlAdmin/TCAdminV3-Issues/issues
 - Report a bug: https://github.com/TotalControlAdmin/TCAdminV3-Issues/issues/new?template=bug_report.yml
-- Request a feature: https://github.com/TotalControlAdmin/TCAdminV3-Issues/issues/new
+- Request a feature: https://github.com/TotalControlAdmin/TCAdmin-V3-Issues-and-Feedback/discussions
 - Docs: https://docs.tcadmin.com
 - Website / Support: https://www.tcadmin.com
 
