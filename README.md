@@ -16,7 +16,7 @@ This repository is the public issue tracker for `TCAdmin V3`. Use it to report b
 
 ---
 
-## How to report a great bug 🔧
+## How to report a great bug
 
 Please include the following when filing a bug to help us reproduce and fix it faster:
 
